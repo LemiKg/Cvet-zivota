@@ -20,38 +20,7 @@
   }
 
   .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: $logo-background;
-    padding: 20px 0;
-    gap: 10px;
-
-    img {
-      width: 80px;
-    }
-
-    h1 {
-      font-size: 4rem;
-      font-family: "Charm-regular";
-      line-height: 50px;
-      text-transform: uppercase;
-
-      @media ($tablet) {
-        font-size: 2rem;
-        line-height: 1.8rem;
-      }
-    }
-
-    h4 {
-      font-style: italic;
-      font-size: 1.1rem;
-      line-height: 20px;
-
-      @media ($tablet) {
-        font-size: 0.6rem;
-      }
-    }
   }
 
   .navigation {

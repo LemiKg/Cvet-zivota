@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import Offer from "./Offer";
-import { offers } from "./offersList";
+import { offers } from "../mocks/offersList";
 
 const Offers = () => {
   const renderMethod = useCallback(() => {

@@ -25,11 +25,15 @@
       justify-content: center;
       border-radius: 15px;
 
+      span {
+        border-radius: 15px;
+        box-shadow: $offer-box-shadow;
+      }
+
       img {
         width: 90%;
         height: 90%;
         margin: 0 auto;
-        border-radius: 15px;
       }
     }
 
@@ -42,6 +46,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 15px;
+      box-shadow: $offer-box-shadow;
     }
 
     @media ($tablet) {

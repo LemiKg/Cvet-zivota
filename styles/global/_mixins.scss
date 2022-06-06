@@ -1,0 +1,23 @@
+@mixin horizontal-line($color) {
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: url("/horizontal-#{$color}.svg");
+    bottom: 0;
+    left: 1.5%;
+    width: 97%;
+  }
+}
+
+@mixin vertical-line {
+  &:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    background: url("/vertical.svg");
+    right: 0;
+    width: 5px;
+  }
+}

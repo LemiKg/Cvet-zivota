@@ -1,5 +1,5 @@
-import React, { useCallback } from "react";
-import { navItems } from "../navItems";
+import React from "react";
+import { navItems } from "../../mocks/navItems";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
