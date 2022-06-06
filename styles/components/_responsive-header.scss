@@ -1,0 +1,84 @@
+.responsive-navigation {
+  background: $navigation-background-color-responsive;
+  position: absolute;
+  transition: 0.2s;
+  top: 0;
+  left: 0;
+  right: 15%;
+  bottom: 0;
+  z-index: 10;
+
+  &.inactive {
+    transform: translateX(-100%);
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  @media ($tablet) {
+    &.active {
+      .navigation {
+        background-image: url("data:image/svg+xml, %3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='3' stroke-dasharray='8' stroke-dashoffset='9' stroke-linecap='square'/%3e%3c/svg%3e");
+        background: $navigation-background-color-responsive;
+        display: flex;
+        flex-direction: column;
+
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .responsive-navigation-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px dashed $light-color;
+
+    .logo {
+      background: transparent;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h4 {
+        font-size: 0.5rem;
+        line-height: unset;
+      }
+    }
+
+    .close-button {
+      font-size: 1.4rem;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.backdrop {
+  transition: opacity 0.5s;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+
+  &.active {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &.inactive {
+    width: 0;
+    opacity: 0;
+  }
+}

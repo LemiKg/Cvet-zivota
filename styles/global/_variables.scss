@@ -1,0 +1,22 @@
+$background-color: linear-gradient(180deg, #91c788 0%, #d3d4b8 100%);
+$logo-background: linear-gradient(180deg, #6d9966 0%, #89aa83 100%);
+$primary-color: #354a32;
+$header-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+$navigation-background-color: #7a9974;
+$navigation-background-color-responsive: $primary-color;
+$navigation-overlay-color: rgba(0, 0, 0, 0.5);
+$light-color: #fff;
+$dark-color: #000;
+$slider-actions-color: #feffde;
+$slider-bullet-color: rgb(129, 129, 129);
+$button-primary-color: rgb(255, 255, 188);
+$offer-box-color: #52734d;
+$offer-box-color-responsive: rgba(53, 74, 50, 0.8);
+$offer-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+
+// Media queries
+$mobile: "max-width: 425px";
+$tablet: "max-width: 767px";
+$desktop: "max-width: 1024px";
+
+// Fonts

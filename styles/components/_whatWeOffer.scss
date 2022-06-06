@@ -1,0 +1,16 @@
+.what-we-offer {
+  text-align: center;
+  margin-bottom: 30px;
+
+  .content {
+    max-width: 660px;
+    padding: 40px;
+    margin: 0 auto;
+    color: $primary-color;
+
+    h1 {
+      font-family: "Charm";
+      font-size: 2.5rem;
+    }
+  }
+}

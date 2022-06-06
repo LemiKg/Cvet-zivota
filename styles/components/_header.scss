@@ -1,0 +1,86 @@
+.header {
+  color: $light-color;
+  font-family: "Roboto";
+  overflow-x: hidden;
+
+  @media ($tablet) {
+    display: flex;
+    background: $logo-background;
+    justify-content: space-evenly;
+  }
+
+  .hamburger-icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    @media ($tablet) {
+      display: flex;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $logo-background;
+    padding: 20px 0;
+    gap: 10px;
+
+    img {
+      width: 80px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-family: "Charm-regular";
+      line-height: 50px;
+      text-transform: uppercase;
+
+      @media ($tablet) {
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    h4 {
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 20px;
+
+      @media ($tablet) {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $navigation-background-color;
+
+    a {
+      padding: 10px 20px;
+
+      &:hover {
+        background: darken($navigation-background-color, 5%);
+        transition: 0.5s;
+      }
+    }
+
+    .active {
+      background: darken($navigation-background-color, 10%);
+    }
+
+    @media ($tablet) {
+      display: none;
+    }
+  }
+
+  .mobile-menu-button {
+    svg {
+      color: $light-color;
+    }
+  }
+}
