@@ -13,16 +13,16 @@ const Spiritual = () => {
   const renderMethod = useCallback(() => {
     if (isDesktop) {
       return spiritual?.map((el, i) => (
-        <DisableSSR>
-          <div key={i}>
+        <DisableSSR key={i}>
+          <div>
             <TextCard title={el?.title} content={el?.text} />
           </div>
         </DisableSSR>
       ));
     } else {
       return spiritual?.map((el, i) => (
-        <DisableSSR>
-          <div key={i}>
+        <DisableSSR key={i}>
+          <div>
             <TextCardResponsive
               page="duhovna-pomoc"
               title={el?.title}
