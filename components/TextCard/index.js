@@ -4,9 +4,9 @@ import Content from "./Content";
 import Title from "./Title";
 
 const TextCard = (props) => {
-  const { title, content } = props;
+  const { title, content, extraText } = props;
 
-  const [collapse, setCollapse] = useState(false);
+  const [collapse, setCollapse] = useState(true);
 
   const handleCollapseValue = () => {
     setCollapse((current) => !current);
@@ -14,16 +14,27 @@ const TextCard = (props) => {
 
   const toggleClass = useCallback(() => {
     if (collapse) {
-      return "collapsed";
+      return {
+        collapseClass: "collapsed",
+        buttonLabel: "Pročitaj više",
+      };
     }
-    return "not-collapsed";
+    return {
+      collapseClass: "not-collapsed",
+      buttonLabel: "Pročitaj manje",
+    };
   }, [collapse]);
 
+  const buttonValues = toggleClass();
+
   return (
-    <div className={`${toggleClass()} card`}>
+    <div className={`${buttonValues.collapseClass} card`}>
       <Title text={title} />
-      <Content text={content} />
-      <Button onClick={handleCollapseValue} content="Pročitaj više" />
+      <Content text={content} extraText={extraText} />
+      <Button
+        onClick={handleCollapseValue}
+        content={buttonValues.buttonLabel}
+      />
     </div>
   );
 };

@@ -118,6 +118,7 @@
           width: 90%;
           border-radius: 15px;
           margin: 0 auto;
+          position: relative;
 
           .slide-content {
             justify-content: unset;
@@ -150,7 +151,8 @@
             align-self: flex-end;
             padding: 5px;
             position: absolute;
-            bottom: 10px;
+            bottom: 20px;
+            right: 20px;
           }
         }
       }

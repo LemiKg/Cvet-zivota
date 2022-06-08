@@ -25,4 +25,20 @@
     display: flex;
     gap: 20px;
   }
+
+  @media ($tablet) {
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      a {
+        padding: 10px 0;
+      }
+    }
+
+    .logo {
+      padding: 0;
+    }
+  }
 }

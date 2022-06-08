@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const Title =(props)=>{
-    const {text}=props
+const Title = (props) => {
+  const { text } = props;
 
-return <p style={{fontSize:30}}>{text}</p>
-}
+  return <h1>{text}</h1>;
+};
 
-export default React.memo(Title)
+export default React.memo(Title);

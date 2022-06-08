@@ -17,3 +17,40 @@ h1,
 h4 {
   font-weight: 400;
 }
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.card-content {
+  text-align: justify;
+  font-family: "Roboto";
+  list-style-type: decimal;
+  list-style-position: inside;
+
+  p,
+  ol,
+  ul {
+    margin-bottom: 20px;
+  }
+
+  ol {
+    li {
+      margin-bottom: 10px;
+      margin-left: 10px;
+      text-align: left;
+
+      &::marker {
+        font-weight: bold;
+      }
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

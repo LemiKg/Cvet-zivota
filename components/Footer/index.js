@@ -6,7 +6,6 @@ import Logo from "../Header/Logo";
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* <Image src="/Logo.png" alt="Logo" height="70" width="70" /> */}
       <Logo />
       <Navigation />
       <div className="social-share">

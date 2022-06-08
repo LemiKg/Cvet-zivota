@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../Button";
 import Image from "next/image";
+import Link from "next/dist/client/link";
 
 const Slide = (props) => {
   const { text, quoteBy, title, image, button } = props;
@@ -9,6 +10,31 @@ const Slide = (props) => {
     backgroundImage: `url(${image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+  };
+
+  const renderButton = () => {
+    if (!button) {
+      return;
+    }
+    return (
+      <div>
+        <Link href={"/dogadjaji"}>
+          <Button content="Pročitaj više" />
+        </Link>
+        <Link href={"/dogadjaji"}>
+          <Button
+            content={
+              <Image
+                width="20"
+                height="15"
+                src="/arrow-right.png"
+                alt="arrow for external link"
+              />
+            }
+          />
+        </Link>
+      </div>
+    );
   };
 
   return (
@@ -20,19 +46,7 @@ const Slide = (props) => {
           <br />
           <span>{quoteBy}</span>
         </p>
-        {Boolean(button) && <Button content="Pročitaj više" />}
-        {Boolean(button) && (
-          <Button
-            content={
-              <Image
-                width="20"
-                height="15"
-                src="/arrow-right.png"
-                alt="arrow for external link"
-              />
-            }
-          />
-        )}
+        {renderButton()}
       </div>
     </div>
   );

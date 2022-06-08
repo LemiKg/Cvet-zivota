@@ -1,0 +1,44 @@
+import React, { useCallback } from "react";
+import TextCard from "../components/TextCard";
+import { events } from "../components/mocks/eventsMock";
+import { useMediaQuery } from "react-responsive";
+import TextCardResponsive from "../components/TextCardResponsive";
+import DisableSSR from "../components/DisableSSR";
+
+const Events = () => {
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 767px)",
+  });
+
+  const renderMethod = useCallback(() => {
+    if (isDesktop) {
+      return events?.map((el, i) => (
+        <DisableSSR key={`dogadjaji-desktop${i}`}>
+          <div>
+            <TextCard
+              title={el?.title}
+              content={el?.text}
+              extraText={el?.extraText}
+            />
+          </div>
+        </DisableSSR>
+      ));
+    } else {
+      return events?.map((el, i) => (
+        <DisableSSR key={`dogadjaji${i}`}>
+          <div>
+            <TextCardResponsive
+              page="dogadjaji"
+              title={el?.title}
+              id={el?.id}
+            />
+          </div>
+        </DisableSSR>
+      ));
+    }
+  }, [events]);
+
+  return renderMethod();
+};
+
+export default Events;

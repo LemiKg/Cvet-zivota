@@ -10,6 +10,13 @@
     width: 80px;
   }
 
+  @media ($mobile) {
+    img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+
   h1 {
     font-size: 4rem;
     font-family: "Charm-regular";

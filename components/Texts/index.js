@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../Button";
+// import Button from "../Button";
+// import Link from "next/dist/client/link";
 
 const Texts = () => {
   return (
@@ -21,7 +22,9 @@ const Texts = () => {
         sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
         mollit. Exercitation veniam consequat sunt nostrud amet.
       </p>
-      <Button content="Pročitaj više" />
+      {/* <Link href={'/'}>
+        <Button content="Pročitaj više" />
+      </Link> */}
     </div>
   );
 };

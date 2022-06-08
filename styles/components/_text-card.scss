@@ -1,2 +1,81 @@
+.card {
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  list-style-position: inside;
+  overflow: hidden;
+  background-color: $text-card-color;
+  max-width: 1024px;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 15px;
+  padding: 20px 30px;
+  color: $light-color;
+  line-height: 1.5;
+  transition: max-height 1s;
+  box-shadow: $offer-box-shadow;
 
+  .card-content {
+    font-family: "Roboto";
+    white-space: normal;
+    font-weight: normal;
 
+    p,
+    ol,
+    ul {
+      margin-bottom: 20px;
+    }
+
+    ol {
+      li {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        text-align: left;
+
+        &::marker {
+          margin-left: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &.collapsed {
+    transition: max-height 1s;
+    max-height: 370px;
+
+    .card-content {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  &.not-collapsed {
+    max-height: 6000px;
+  }
+
+  h1 {
+    font-family: "Charm";
+  }
+
+  ol {
+    li {
+      margin-left: 10px;
+    }
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}
