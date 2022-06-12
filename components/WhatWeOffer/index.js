@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatWeOffer = () => {
   const inlineStyle = {
-    backgroundImage: "url(/what-we-offer.png)",
+    backgroundImage: "url(/what-we-offer.webp)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   };

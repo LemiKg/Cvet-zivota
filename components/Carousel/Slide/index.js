@@ -27,7 +27,7 @@ const Slide = (props) => {
               <Image
                 width="20"
                 height="15"
-                src="/arrow-right.png"
+                src="/arrow-right.webp"
                 alt="arrow for external link"
               />
             }

@@ -8,7 +8,6 @@ const EventText = () => {
   const router = useRouter();
   const { id } = router.query;
   const page = events[id];
-  console.log(page);
   return (
     page && (
       <div className="single-page-text">

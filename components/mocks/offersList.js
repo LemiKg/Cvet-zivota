@@ -1,38 +1,38 @@
 export const offers = [
   {
-    image: "/box1.png",
+    image: "/box1.webp",
     text: "Obuke i kursevi",
   },
   {
-    image: "/box2.png",
+    image: "/box2.webp",
     text: "Energetska merenja životnih parametara",
   },
   {
-    image: "/box3.png",
+    image: "/box3.webp",
     text: "Isceljivanje",
   },
   {
-    image: "/box4.png",
+    image: "/box4.webp",
     text: "Duhovno savetovanje i Medijumstvo",
   },
   {
-    image: "/box5.png",
+    image: "/box5.webp",
     text: "Energetska čišćenja - skidanje negativnih energija",
   },
   {
-    image: "/box6.png",
+    image: "/box6.webp",
     text: "Astrološko savetovanje",
   },
   {
-    image: "/box7.png",
+    image: "/box7.webp",
     text: "Rad na zavisnostima, Manama i Negativnim uverenjima",
   },
   {
-    image: "/box8.png",
+    image: "/box8.webp",
     text: "Regresoterapija",
   },
   {
-    image: "/box9.png",
+    image: "/box9.webp",
     text: "Skidanje negativnih emocija",
   },
 ];
