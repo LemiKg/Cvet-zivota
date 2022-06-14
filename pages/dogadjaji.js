@@ -4,6 +4,7 @@ import { events } from "../components/mocks/eventsMock";
 import { useMediaQuery } from "react-responsive";
 import TextCardResponsive from "../components/TextCardResponsive";
 import DisableSSR from "../components/DisableSSR";
+// import { fetcher } from "../lib/api";
 
 const Events = () => {
   const isDesktop = useMediaQuery({
@@ -38,7 +39,16 @@ const Events = () => {
     }
   }, [events]);
 
-  return renderMethod();
+  return <div className="dogadjaji">{renderMethod()}</div>;
 };
 
 export default Events;
+
+// export const getStaticProps = async () => {
+//   const texts = await fetcher("api/texts");
+//   return {
+//     props: {
+//       texts,
+//     },
+//   };
+// };
