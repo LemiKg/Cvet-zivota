@@ -13,7 +13,7 @@ const ResponsiveNavigation = (props) => {
   return (
     <div className={`responsive-navigation ${visibilityClass}`}>
       <div className="responsive-navigation-header">
-        <Logo />
+        <Logo toggleNav={clickMethod} />
         <button className="close-button" onClick={clickMethod}>
           <Image src="/close.svg" width="20" height="20" alt="close icon X" />
         </button>

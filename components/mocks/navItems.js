@@ -15,4 +15,16 @@ export const navItems = [
     path: "/o-nama",
     name: "O nama",
   },
+  {
+    path: "/obuke",
+    name: "Obuke",
+  },
+  {
+    path: "/kontakt",
+    name: "Kontakt",
+  },
+  {
+    path: "/rad-na-sebi",
+    name: "Rad na sebi",
+  },
 ];

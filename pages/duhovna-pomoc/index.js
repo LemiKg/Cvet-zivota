@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import TextCard from "../components/TextCard";
-import { spiritual } from "../components/mocks/spiritualMocks";
+import TextCard from "../../components/TextCard";
+import { spiritual } from "../../components/mocks/spiritualMocks";
 import { useMediaQuery } from "react-responsive";
-import TextCardResponsive from "../components/TextCardResponsive";
-import DisableSSR from "../components/DisableSSR";
+import TextCardResponsive from "../../components/TextCardResponsive";
+import DisableSSR from "../../components/DisableSSR";
 
 const Spiritual = () => {
   const isDesktop = useMediaQuery({

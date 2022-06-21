@@ -5,7 +5,7 @@ import { offers } from "../mocks/offersList";
 const Offers = () => {
   const renderMethod = useCallback(() => {
     return offers?.map((el, i) => (
-      <Offer key={i} image={el?.image} text={el?.text} />
+      <Offer key={i} path={el?.path} image={el?.image} text={el?.text} />
     ));
   }, [offers]);
 

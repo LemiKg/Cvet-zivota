@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import TextCard from "../components/TextCard";
-import { events } from "../components/mocks/eventsMock";
+import TextCard from "../../components/TextCard";
+import { events } from "../../components/mocks/eventsMock";
 import { useMediaQuery } from "react-responsive";
-import TextCardResponsive from "../components/TextCardResponsive";
-import DisableSSR from "../components/DisableSSR";
+import TextCardResponsive from "../../components/TextCardResponsive";
+import DisableSSR from "../../components/DisableSSR";
 // import { fetcher } from "../lib/api";
 
 const Events = () => {

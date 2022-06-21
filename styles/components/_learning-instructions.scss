@@ -1,0 +1,23 @@
+.learning-instructions {
+  width: 90%;
+  max-width: 1024px;
+  margin: 30px auto;
+  background: $text-card-color;
+  color: $light-color;
+  border-radius: $border-radius;
+  padding: 20px;
+  box-shadow: $offer-box-shadow;
+  font-family: "Roboto";
+
+  h1 {
+    margin-bottom: 30px;
+    font-family: "Charm";
+    text-align: center;
+  }
+
+  @media ($tablet) {
+    background: none;
+    color: $primary-color;
+    box-shadow: none;
+  }
+}
