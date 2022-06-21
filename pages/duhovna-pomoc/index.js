@@ -32,7 +32,7 @@ const Spiritual = () => {
         </DisableSSR>
       ));
     }
-  }, [spiritual]);
+  }, [isDesktop]);
 
   return renderMethod();
 };

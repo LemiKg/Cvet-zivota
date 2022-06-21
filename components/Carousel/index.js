@@ -27,7 +27,7 @@ const Carousel = (props) => {
         />
       </SwiperSlide>
     ));
-  }, [slides]);
+  }, [slides, isDesktop]);
 
   const renderMethod = useCallback(() => {
     return (
@@ -42,7 +42,7 @@ const Carousel = (props) => {
         {renderSlides()}
       </Swiper>
     );
-  }, []);
+  }, [isDesktop, numberOfSlides, sliderClass, renderSlides]);
 
   return renderMethod();
 };

@@ -37,7 +37,7 @@ const Events = () => {
         </DisableSSR>
       ));
     }
-  }, [events]);
+  }, [isDesktop]);
 
   return <div className="dogadjaji">{renderMethod()}</div>;
 };

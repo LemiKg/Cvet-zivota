@@ -29,7 +29,7 @@ const Trainings = () => {
         </DisableSSR>
       ));
     }
-  }, [trainings]);
+  }, [isDesktop]);
 
   return (
     <div className="trainings">

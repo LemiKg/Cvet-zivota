@@ -7,7 +7,7 @@ const Offers = () => {
     return offers?.map((el, i) => (
       <Offer key={i} path={el?.path} image={el?.image} text={el?.text} />
     ));
-  }, [offers]);
+  }, []);
 
   return <div className="offers-content">{renderMethod()}</div>;
 };

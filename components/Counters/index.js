@@ -7,7 +7,7 @@ const Counters = () => {
     return counters?.map((el, i) => (
       <Counter key={i} number={el?.number} label={el?.label} />
     ));
-  }, [counters]);
+  }, []);
 
   return <div className="counters"> {renderMethod()} </div>;
 };

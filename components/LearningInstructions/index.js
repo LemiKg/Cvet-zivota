@@ -5,7 +5,7 @@ const LearningInstructions = () => {
   return (
     <div>
       <DisableSSR>
-        <p className="learning-instructions">
+        <div className="learning-instructions">
           <h1>Način učenja i pohađanja kurseva</h1>
           <p>
             *Sve navedene kurseve drzi Nemanja Blagojević i sve tehnike su
@@ -76,7 +76,7 @@ const LearningInstructions = () => {
             međusobno pomažu, dopunjuju i čuvaju sebe, grupu, a svi zajedno
             čuvamo svoje države i porodice.
           </p>
-        </p>
+        </div>
       </DisableSSR>
     </div>
   );
