@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const NavButton = (props) => {
   const { onClick } = props;
@@ -7,7 +6,7 @@ const NavButton = (props) => {
   return (
     <div className="hamburger-icon">
       <button onClick={onClick} className="outline-none mobile-menu-button">
-        <Image
+        <img
           src="/hamburger-icon.svg"
           alt="hamburger icon"
           width="20"

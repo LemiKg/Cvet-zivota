@@ -1,8 +1,17 @@
 import React from "react";
+import Head from "next/head";
 
 const About = () => {
   return (
     <div className="card-content about">
+      <Head>
+        <title>Cvet Života - O nama</title>
+        <meta
+          name="description"
+          content="„Centar za duhovni razvoj i edukaciju“ je tim ljudi koji deli zajedničku strast prema radu na sebi i pomaganju drugima da stanu na taj put. Naš cilj je edukacija svih zainteresovanih u duhovne tehnike, promocija duhovnosti  i rada na sebi kao načina života, kao i pružanje pomoći svima kojima je potrebna. U tu svrhu organizujemo seminare, kruseve, druženja i zajedničke aktivnosti sa ciljem unapređenja kvaliteta života i duhovne evolucije."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1>O nama</h1>
       <p>
         &bdquo;Centar za duhovni razvoj i edukaciju&ldquo; je tim ljudi koji

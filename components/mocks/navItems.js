@@ -8,23 +8,23 @@ export const navItems = [
     name: "Duhovna pomoć",
   },
   {
-    path: "/dogadjaji",
-    name: "Događaji",
+    path: "/obuke",
+    name: "Obuke",
   },
+  {
+    path: "/rad-na-sebi",
+    name: "Rad na sebi",
+  },
+  // {
+  //   path: "/dogadjaji",
+  //   name: "Događaji",
+  // },
   {
     path: "/o-nama",
     name: "O nama",
   },
   {
-    path: "/obuke",
-    name: "Obuke",
-  },
-  {
     path: "/kontakt",
     name: "Kontakt",
-  },
-  {
-    path: "/rad-na-sebi",
-    name: "Rad na sebi",
   },
 ];

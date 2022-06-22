@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../Button";
-import Image from "next/image";
 import Link from "next/dist/client/link";
 
 const Slide = (props) => {
@@ -24,7 +23,7 @@ const Slide = (props) => {
         <Link href={"/dogadjaji"}>
           <Button
             content={
-              <Image
+              <img
                 width="20"
                 height="15"
                 src="/arrow-right.webp"

@@ -1,8 +1,17 @@
 import React from "react";
+import Head from "next/head";
 
 const SelfImprovement = () => {
   return (
     <div className="self-improvement colored-list-items">
+      <Head>
+        <title>Cvet Života - Rad na sebi</title>
+        <meta
+          name="description"
+          content="„Centar za duhovni razvoj i edukaciju“ je tim ljudi koji deli zajedničku strast prema radu na sebi i pomaganju drugima da stanu na taj put. Naš cilj je edukacija svih zainteresovanih u duhovne tehnike, promocija duhovnosti  i rada na sebi kao načina života, kao i pružanje pomoći svima kojima je potrebna. U tu svrhu organizujemo seminare, kruseve, druženja i zajedničke aktivnosti sa ciljem unapređenja kvaliteta života i duhovne evolucije."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1>Rad na sebi - Duhovni rad</h1>
       <p>
         Rad na sebi je način života svakog duhovnog tragaoca. On ne uključuje

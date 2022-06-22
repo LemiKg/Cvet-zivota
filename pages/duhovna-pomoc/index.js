@@ -4,6 +4,7 @@ import { spiritual } from "../../components/mocks/spiritualMocks";
 import { useMediaQuery } from "react-responsive";
 import TextCardResponsive from "../../components/TextCardResponsive";
 import DisableSSR from "../../components/DisableSSR";
+import Head from "next/head";
 
 const Spiritual = () => {
   const isDesktop = useMediaQuery({
@@ -34,7 +35,19 @@ const Spiritual = () => {
     }
   }, [isDesktop]);
 
-  return renderMethod();
+  return (
+    <div>
+      <Head>
+        <title>Cvet Života - Duhovna pomoć</title>
+        <meta
+          name="description"
+          content="„Centar za duhovni razvoj i edukaciju“ je tim ljudi koji deli zajedničku strast prema radu na sebi i pomaganju drugima da stanu na taj put. Naš cilj je edukacija svih zainteresovanih u duhovne tehnike, promocija duhovnosti  i rada na sebi kao načina života, kao i pružanje pomoći svima kojima je potrebna. U tu svrhu organizujemo seminare, kruseve, druženja i zajedničke aktivnosti sa ciljem unapređenja kvaliteta života i duhovne evolucije."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {renderMethod()}
+    </div>
+  );
 };
 
 export default React.memo(Spiritual);

@@ -6,11 +6,7 @@
   gap: 10px;
   color: $light-color;
 
-  img {
-    width: 80px;
-  }
-
-  @media ($mobile) {
+  @media ($tablet) {
     img {
       width: 40px !important;
       height: 40px !important;

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/dist/client/image";
 import Link from "next/link";
 
 const Offer = (props) => {
@@ -9,7 +8,7 @@ const Offer = (props) => {
     <Link href={path}>
       <a href="#" className="offer-box">
         <div className="image">
-          <Image layout="fill" src={image} alt="offer box" />
+          <img src={image} alt="offer box" />
         </div>
         <p className="text">{text}</p>
       </a>
