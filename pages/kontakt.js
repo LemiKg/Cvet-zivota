@@ -42,11 +42,11 @@ const Kontakt = () => {
         </li>
         <li>
           Radiestezista &ndash; Egzorcista Du&scaron;an Vlajković&nbsp;
-          <a href="tel:+381677076811">+381 67 707 68 11</a>
+          <a href="tel:+381677078611">+381 67 707 86 11</a>
         </li>
         <li>
           Emotivni terapeut &ndash; Sladjana Djordjević&nbsp;
-          <a href="tel:+381677076811">+381 67 707 68 11</a>
+          <a href="tel:+381677078611">+381 67 707 86 11</a>
         </li>
       </ul>
     </div>
