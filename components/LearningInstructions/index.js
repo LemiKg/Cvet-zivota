@@ -37,7 +37,7 @@ const LearningInstructions = () => {
             rezultata ne zahteva vi&scaron;e 20 minuta dnevnog
             kori&scaron;ćenja.
           </p>
-          <p>
+          {/* <p>
             <br />
             *Svakog mesca počinje po jedna grupa polaznika. Svaki kurs posebno
             ko&scaron;ta 3000 dinara, ali ko nema novca za njega je besplatno,
@@ -45,7 +45,7 @@ const LearningInstructions = () => {
             kursa odmah nakon samog rada i kursa nije duzan da plati. Ko zeli da
             plati, ali nema trenutno, može da plati po slobodnom nahodjenju na
             rate.
-          </p>
+          </p> */}
           <p>
             <br />
             *Svaki kurs je u vidu vođenog rada, nema nikakvih inicijacija, nema
